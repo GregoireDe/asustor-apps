@@ -16,7 +16,7 @@ C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
 docker create -i -t --name=Prowlarr \
-        -p 18989:8989 \
+        -p 28989:28989 \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
         -v /etc/localtime:/etc/localtime:ro \
         -v /share/Docker/Prowlarr/config:/config:rw \
