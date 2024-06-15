@@ -20,8 +20,6 @@ docker create -i -t --name=Prowlarr \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
         -v /etc/localtime:/etc/localtime:ro \
         -v /share/Docker/Prowlarr/config:/config:rw \
-        -v /share/Docker/Prowlarr/tv:/tv:rw \
-        -v /share/Download:/downloads:rw \
         -v /share:/shared:rw \
         --restart unless-stopped \
         linuxserver/prowlarr:latest
