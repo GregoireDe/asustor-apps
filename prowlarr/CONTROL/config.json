@@ -1,0 +1,44 @@
+{
+  "general": {
+    "package": "prowlarr-docker",
+    "name": "Prowlarr",
+    "version": "v1.0.0.r01",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "Prowlarr",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://prowlarr.com",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "adm-desktop": {
+    "app": {
+      "port": 29696,
+      "protocol": "http",
+      "type": "custom",
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      29696
+    ]
+  }
+}

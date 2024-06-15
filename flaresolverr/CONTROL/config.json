@@ -1,0 +1,32 @@
+{
+  "general": {
+    "package": "flaresolverr-docker",
+    "name": "FlareSolverr",
+    "version": "v1.0.0.r01",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "FlareSolverr",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://github.com/FlareSolverr/FlareSolverr",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      18191
+    ]
+  }
+}

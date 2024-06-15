@@ -1,0 +1,5 @@
+FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
+
+Note:
+1. Flaresolverr port to configure on Prowlarr or Jackett : 18191
+2. The docker version is maintained by flaresolverr
