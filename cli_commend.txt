@@ -1,3 +1,0 @@
-chmod +x apkg-tool_py3.py
-python3 apkg-tools_py3.py create prowlarr
-
