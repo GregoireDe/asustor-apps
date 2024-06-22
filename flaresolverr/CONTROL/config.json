@@ -2,7 +2,7 @@
   "general": {
     "package": "flaresolverr-docker",
     "name": "FlareSolverr",
-    "version": "v1.0.0.r01",
+    "version": "3.3.20",
     "depends": [
       "docker-ce(>=20.10.2.r2)"
     ],
