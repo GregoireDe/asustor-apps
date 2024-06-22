@@ -4,5 +4,4 @@ It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering compl
 
 
 Note:
-1. The folder "/shared" of Prowlarr binds to shared folder root of NAS, you can import videos in Radarr from other shared folders.
-2. The docker version is maintained by LinuxServer.io.
+1. The docker version is maintained by LinuxServer.io.
