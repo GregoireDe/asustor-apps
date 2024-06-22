@@ -2,8 +2,7 @@
 
 echo "post-install"
 
-
-cp -n ./default.conf "/share/Ext Settings/settings.conf"
+if [ ! -f "/share/Ext Settings/settings.conf" ]; then cp ./default.conf "/share/Ext Settings/settings.conf"; fi
 
 . "/share/Ext Settings/settings.conf"
 
