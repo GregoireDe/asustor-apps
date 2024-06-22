@@ -7,7 +7,7 @@
     "developer": "h2h3",
     "maintainer": "h2h3",
     "email": "asustor@havi.fr",
-    "website": "",
+    "website": "https://www.asustor.com",
     "architecture": "x86-64",
     "firmware": "4.0.0"
   },
@@ -21,13 +21,7 @@
     }
   },
   "register": {
-    "share-folder": [
-      {
-        "name": "Ext Settings",
-        "description": "Data and files directory for Docker Apps"
-      }
-    ],
-    "prerequisites": {
+      "prerequisites": {
       "enable-service": [
         "httpd"
       ],
