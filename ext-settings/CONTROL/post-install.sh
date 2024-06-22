@@ -2,8 +2,6 @@
 
 echo "post-install"
 
-if [ ! -f "/volume1/Web/ext-settings/settings.conf" ]; then cp ./default.conf "/volume1/Web/ext-settings/settings.conf";chmod 777 /volume1/Web/ext-settings/settings.conf; fi
-
 . "/volume1/Web/ext-settings/settings.conf"
 
 sed -i "s/WARNING:[0-9.]\+,/WARNING:$EXT4_WARNING,/g" /volume0/usr/builtin/webman/portal/build/launcherBuild.js
