@@ -2,9 +2,11 @@
 
 echo "post-install"
 
-if [ ! -f "/share/Ext Settings/settings.conf" ]; then cp ./default.conf "/share/Ext Settings/settings.conf"; fi
+if [ ! -f "/volume1/Web/ext-settings/settings.conf" ]; then cp ./default.conf "/volume1/Web/ext-settings/settings.conf"; fi
 
-. "/share/Ext Settings/settings.conf"
+chmod 777 /volume1/Web/ext-settings/settings.conf
+
+. "/volume1/Web/ext-settings/settings.conf"
 
 sed -i "s/WARNING:[0-9.]\+/WARNING:$EXT4_WARNING/g" /volume0/usr/builtin/webman/portal/build/launcherBuild.js
 sed -i "s/LIMIT:[0-9.]\+/LIMIT:$EXT4_LIMIT/g" /volume0/usr/builtin/webman/portal/build/launcherBuild.js

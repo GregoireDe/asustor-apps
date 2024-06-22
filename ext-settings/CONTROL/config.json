@@ -7,18 +7,32 @@
     "developer": "h2h3",
     "maintainer": "h2h3",
     "email": "asustor@havi.fr",
-    "website": "https:/na",
+    "website": "",
     "architecture": "x86-64",
     "firmware": "4.0.0"
   },
-  "register":
-  {
+  "adm-desktop": {
+    "app": {
+      "type": "webserver"
+    },
+    "privilege": {
+      "accessible": "users",
+      "customizable": true
+    }
+  },
+  "register": {
     "share-folder": [
       {
         "name": "Ext Settings",
         "description": "Data and files directory for Docker Apps"
       }
     ],
+    "prerequisites": {
+      "enable-service": [
+        "httpd"
+      ],
+      "restore-service": []
+    },
     "boot-priority": {
       "start-order": 10,
       "stop-order": 20
