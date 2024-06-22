@@ -1,8 +1,6 @@
-# asustor-flaresolverr
+# Asustor FlareSolverr Docker App
 
 ![FlareSolverr](CONTROL/icon.png)
-
-Docker FlareSolverr for Asustor
 
 ## Links
 * Docker FlareSolverr [@FlareSolverr](https://hub.docker.com/r/flaresolverr/flaresolverr)

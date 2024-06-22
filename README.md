@@ -1,10 +1,11 @@
 # asustor-apps
 
 
-Docker Apps for Asustor OS (ADM 4.X)
+Apps for Asustor OS (ADM 4.X)
 
 - FlareSolverr
 - Prowlarr
+- Ext Settings
 
 Downloadable using "App Central" application
 The folders also contains apk if you want to install manually.

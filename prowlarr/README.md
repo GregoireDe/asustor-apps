@@ -1,8 +1,6 @@
-# asustor-prowlarr
+# Asustor Prowlarr Docker App
 
 ![Prowlarr](CONTROL/icon.png)
-
-Docker Prowlarr for Asustor
 
 ## Links
 * Docker Prowlarr [@prowlarr](https://docs.linuxserver.io/images/docker-prowlarr/)

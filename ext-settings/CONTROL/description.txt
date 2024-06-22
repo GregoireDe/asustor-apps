@@ -1,0 +1,12 @@
+Extended Settings for ADM OS Portal.
+
+Note:
+
+Configure "settings.conf" file in "/share/Ext Settings"
+
+Current settings are
+- (EXT4) Disk Warning threshold (EXT4). Default: 90%
+- (EXT4) Disk Limit threshold (EXT4). Default: 95%
+- (BTRFS) Free Disk Limit threshold. Default 5%
+
+/!\ For BTRFS, it's highly recommended to keep a minimum free space in order for that system storage to work correctly

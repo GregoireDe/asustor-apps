@@ -1,0 +1,27 @@
+{
+  "general": {
+    "package": "ext-settings",
+    "name": "Ext Settings",
+    "version": "1.0",
+    "conflicts": [],
+    "developer": "h2h3",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https:/na",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "register":
+  {
+    "share-folder": [
+      {
+        "name": "Ext Settings",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 10,
+      "stop-order": 20
+    }
+  }
+}
