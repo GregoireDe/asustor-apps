@@ -10,6 +10,6 @@
 
 ## Usage
 
-1. Edit file in /share/default.conf
+1. Edit file in /share/settings.conf
 
 
