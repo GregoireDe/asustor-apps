@@ -4,17 +4,17 @@ echo "start-stop"
 
 case "$1" in
     start)
-        ./post-install.sh
+        /volume1/.@plugins/AppCentral/ext-settings/CONTROL/post-install.sh
         sleep 3
         ;;
     stop)
-        ./pre-uninstall.sh
+        /volume1/.@plugins/AppCentral/ext-settings/CONTROL/pre-uninstall.sh
         sleep 3
         ;;
     reload)
-        ./post-uninstall.sh
+        /volume1/.@plugins/AppCentral/ext-settings/CONTROL/pre-uninstall.sh
         sleep 3
-        ./pre-uninstall.sh
+        /volume1/.@plugins/AppCentral/ext-settings/CONTROL/post-install.sh
         sleep 3
         ;;
     *)
