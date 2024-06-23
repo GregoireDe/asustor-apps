@@ -3,11 +3,19 @@
 $start_script = "/volume1/.@plugins/AppCentral/ext-settings/CONTROL/start-stop.sh";
 $envFilepath = "/volume1/Web/ext-settings/settings.conf";
 
+function is_valid($value)
+{
+    if (isset($value) && is_numeric($value) && (int) $value >= 1 && (int) $value <= 100){
+        return true;
+    }
+    return false;
+
+}
 if($_POST["ext4_warning"]){
 
-    $ext4_warning = isset($_POST['ext4_warning']) ? $_POST['ext4_warning'] : 90;
-    $ext4_limit = isset($_POST['ext4_limit']) ? $_POST['ext4_limit'] : 95;
-    $btrfs_free_limit = isset($_POST['btrfs_free_limit']) ? $_POST['btrfs_free_limit'] : 5;
+    $ext4_warning = is_valid($_POST['ext4_warning']) ? $_POST['ext4_warning'] : 90;
+    $ext4_limit = is_valid($_POST['ext4_limit']) ? $_POST['ext4_limit'] : 95;
+    $btrfs_free_limit = is_valid($_POST['btrfs_free_limit']) ? $_POST['btrfs_free_limit'] : 5;
     $content = "EXT4_WARNING=".$ext4_warning."\nEXT4_LIMIT=".$ext4_limit."\nBTRFS_FREE_LIMIT=".$btrfs_free_limit;
 
     file_put_contents($envFilepath, $content);
