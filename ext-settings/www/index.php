@@ -10,7 +10,7 @@ if($_POST["ext4_warning"]){
     $content = "EXT4_WARNING=".$ext4_warning."\nEXT4_LIMIT=".$ext4_limit."\nBTRFS_FREE_LIMIT=".$btrfs_free_limit;
 
     file_put_contents($envFilepath, $content);
-    $output = shell_exec('/volume1/.@plugins/AppCentral/ext-settings/CONTROL/start-stop.sh start');
+    $output = shell_exec('sudo /volume1/.@plugins/AppCentral/ext-settings/CONTROL/start-stop.sh start');
 
 }
 
