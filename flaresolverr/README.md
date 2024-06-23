@@ -1,4 +1,4 @@
-# Asustor FlareSolverr Docker App
+# FlareSolverr Docker App
 
 ![FlareSolverr](CONTROL/icon.png)
 

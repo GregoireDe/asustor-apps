@@ -1,14 +1,14 @@
-# asustor-apps
+# Asustor Apps
 
 
 Apps for Asustor OS (ADM 4.X)
 
 - FlareSolverr
 - Prowlarr
-- Ext Settings
+- Extended Settings
 
-Downloadable using "App Central" application
-The folders also contains apk if you want to install manually.
+
+The folder contains APK apps if you want to install manually.
 
 ## Links
 * ASUSTOR [App Central](http://www.asustor.com/apps?lan=en)

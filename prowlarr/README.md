@@ -1,4 +1,4 @@
-# Asustor Prowlarr Docker App
+# Prowlarr Docker App
 
 ![Prowlarr](CONTROL/icon.png)
 

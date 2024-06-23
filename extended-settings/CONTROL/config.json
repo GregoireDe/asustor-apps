@@ -1,7 +1,7 @@
 {
   "general": {
-    "package": "ext-settings",
-    "name": "Ext Settings",
+    "package": "extended-settings",
+    "name": "Extended Settings",
     "version": "1.0",
     "conflicts": [],
     "developer": "h2h3",

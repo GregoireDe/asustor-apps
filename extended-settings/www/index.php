@@ -1,7 +1,7 @@
 <?php
 
-$start_script = "/volume1/.@plugins/AppCentral/ext-settings/CONTROL/start-stop.sh";
-$envFilepath = "/volume1/Web/ext-settings/settings.conf";
+$start_script = "/volmain/.@plugins/AppCentral/extended-settings/CONTROL/start-stop.sh";
+$envFilepath = "/volmain/Web/extended-settings/settings.conf";
 
 function is_valid($value)
 {
@@ -53,7 +53,7 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="robots" content="noindex,nofollow">
-    <title>ADM Extended Settings</title>
+    <title>Extended Settings</title>
     <!-- Favicon icon -->
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/libs/select2/dist/css/select2.min.css">
@@ -169,7 +169,7 @@ else
                     <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
                                                 href="./" aria-expanded="false"><i
                             class="mdi mdi-view-dashboard"></i><span
-                            class="hide-menu">Configuration</span></a></li>
+                            class="hide-menu">Portal</span></a></li>
 
                     </li>
 
@@ -192,7 +192,7 @@ else
         <div class="page-breadcrumb">
             <div class="row">
                 <div class="col-12 d-flex no-block align-items-center">
-                    <h4 class="page-title">Configuration</h4>
+                    <h4 class="page-title">Portal</h4>
 
                 </div>
             </div>
@@ -212,7 +212,7 @@ else
                     <div class="card">
                     <form method="post" class="form-horizontal" data-bitwarden-watching="1">
                         <div class="card-body">
-                            <h5 class="card-title">Disk Threshold</h5>
+                            <h5 class="card-title">Disk Alert Thresholds</h5>
                             <div class="row mb-3 align-items-center">
                                 <div class="col-lg-8 col-md-12 text-end">
                                     <span>Ext4 disk space warning</span>
