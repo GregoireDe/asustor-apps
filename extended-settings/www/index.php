@@ -324,7 +324,7 @@ else
 <script src="./assets/libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js"></script>
 <script src="./assets/libs/jquery-minicolors/jquery.minicolors.min.js"></script>
 <script src="./assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="./assets/libs/quill/dist/quill.min.js"></script>
+
 <script>
     //***********************************//
     // For select 2
