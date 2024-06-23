@@ -2,10 +2,10 @@
 
 echo "pre-uninstall"
 
-CURRENT_DIR=$( cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P )
+APP_DIR=/volmain/.@plugins/AppCentral/extended-settings/CONTROL
 DEFAULT_SETTINGS_FILE=/volmain/Web/extended-settings/default.conf
 
 . "$DEFAULT_SETTINGS_FILE"
-. "$CURRENT_DIR/change-limits.sh"
+. "$APP_DIR/change-limits.sh"
 
 exit 0

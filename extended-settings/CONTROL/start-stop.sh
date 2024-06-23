@@ -2,21 +2,21 @@
 
 echo "start-stop"
 
-CURRENT_DIR=$( cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P )
+APP_DIR=/volmain/.@plugins/AppCentral/extended-settings/CONTROL
 
 case "$1" in
     start)
-        "$CURRENT_DIR/post-install.sh"
+        "$APP_DIR/post-install.sh"
         sleep 1
         ;;
     stop)
-        "$CURRENT_DIR//pre-uninstall.sh"
+        "$APP_DIR//pre-uninstall.sh"
         sleep 1
         ;;
     reload)
-        "$CURRENT_DIR/pre-uninstall.sh"
+        "$APP_DIR/pre-uninstall.sh"
         sleep 1
-        "$CURRENT_DIR/post-install.sh"
+        "$APP_DIR/post-install.sh"
         sleep 1
         ;;
     *)
