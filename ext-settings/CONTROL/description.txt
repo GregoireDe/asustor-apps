@@ -2,8 +2,6 @@ Extended Settings for ADM OS Portal.
 
 Note:
 
-Configure "settings.conf" file in "/share/Ext Settings"
-
 Current settings are
 - (EXT4) Disk Warning threshold (EXT4). Default: 90%
 - (EXT4) Disk Limit threshold (EXT4). Default: 95%
