@@ -21,7 +21,7 @@
     }
   },
   "register": {
-      "prerequisites": {
+    "prerequisites": {
       "enable-service": [
         "httpd"
       ],
