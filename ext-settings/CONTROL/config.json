@@ -16,8 +16,8 @@
       "type": "webserver"
     },
     "privilege": {
-      "accessible": "users",
-      "customizable": true
+      "accessible": "administrators",
+      "customizable": false
     }
   },
   "register": {
