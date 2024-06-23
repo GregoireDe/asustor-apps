@@ -10,7 +10,7 @@ case "$1" in
         sleep 1
         ;;
     stop)
-        "$APP_DIR//pre-uninstall.sh"
+        "$APP_DIR/pre-uninstall.sh"
         sleep 1
         ;;
     reload)
