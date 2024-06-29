@@ -2,7 +2,7 @@
 
 echo "post-install"
 
-. "/usr/local/Appcentral/readarr-docker/CONTROL/conf.sh"
+. "/usr/local/AppCentral/readarr-docker/CONTROL/conf.sh"
 
 docker pull $APP_IMAGE:$APP_IMAGE_BRANCH
 
