@@ -1,0 +1,44 @@
+{
+  "general": {
+    "package": "readarr-docker",
+    "name": "Readarr",
+    "version": "0.3.28.2554",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "Readarr",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://readarr.com",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "adm-desktop": {
+    "app": {
+      "port": 28787,
+      "protocol": "http",
+      "type": "custom",
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      28787
+    ]
+  }
+}

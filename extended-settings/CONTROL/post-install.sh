@@ -2,7 +2,7 @@
 
 echo "post-install"
 
-APP_DIR=/volmain/.@plugins/AppCentral/extended-settings/CONTROL
+APP_DIR=/usr/local/AppCentral/extended-settings/CONTROL
 SETTINGS_FILE=/volmain/Web/extended-settings/settings.conf
 
 . "$SETTINGS_FILE"

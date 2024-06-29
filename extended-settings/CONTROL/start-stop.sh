@@ -2,7 +2,7 @@
 
 echo "start-stop"
 
-APP_DIR=/volmain/.@plugins/AppCentral/extended-settings/CONTROL
+APP_DIR=/usr/local/AppCentral/extended-settings/CONTROL
 
 case "$1" in
     start)
