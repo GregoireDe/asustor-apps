@@ -2,7 +2,7 @@
 
 echo "post-install"
 
-. "conf.sh"
+. "$APKG_REPO_DIR/CONTROL/conf.sh"
 
 docker pull $APP_IMAGE:$APP_IMAGE_BRANCH
 

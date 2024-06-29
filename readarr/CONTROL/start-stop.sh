@@ -2,7 +2,7 @@
 
 echo "start-stop"
 
-. "conf.sh"
+. "$APKG_REPO_DIR/CONTROL/conf.sh"
 
 
 case "$1" in
