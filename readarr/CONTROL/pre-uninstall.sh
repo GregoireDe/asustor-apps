@@ -2,7 +2,7 @@
 
 echo "pre-uninstall"
 
-. "$APKG_REPO_DIR/CONTROL/conf.sh"
+. "/usr/local/Appcentral/readarr-docker/CONTROL/conf.sh"
 
 container=$(docker container ls -a | grep $APP_NAME  | awk '{print $1}')
 im=$(docker images | grep $APP_IMAGE | grep latest | awk '{print $3}')
