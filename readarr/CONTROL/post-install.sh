@@ -24,6 +24,7 @@ docker create -i -t --name=$APP_NAME \
         -v /share/Docker/$APP_NAME/config:/config:rw \
         -v /share/Docker/$APP_NAME/books:/books:rw \
         -v /share/Download:/downloads:rw \
+        -v /share:/shared:rw \
         --restart unless-stopped \
         $APP_IMAGE:$APP_IMAGE_BRANCH
 
