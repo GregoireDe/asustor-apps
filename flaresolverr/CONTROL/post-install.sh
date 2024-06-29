@@ -2,7 +2,7 @@
 
 echo "post-install"
 
-. "/usr/local/AppCentral/prowlarr-docker/CONTROL/conf.sh"
+. "/usr/local/AppCentral/flaresolverr-docker/CONTROL/conf.sh"
 
 docker pull $APP_IMAGE:$APP_IMAGE_BRANCH
 
