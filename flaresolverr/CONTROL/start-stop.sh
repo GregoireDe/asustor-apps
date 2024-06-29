@@ -2,24 +2,24 @@
 
 echo "start-stop"
 
-CONTAINER_NAME=FlareSolverr
+. "/usr/local/AppCentral/flaresolverr-docker/CONTROL/conf.sh"
 
 case "$1" in
     start)
-        echo "Start $CONTAINER_NAME container..."
-        docker start $CONTAINER_NAME
+        echo "Start $APP_NAME container..."
+        docker start $APP_NAME
         sleep 3
         ;;
     stop)
-        echo "Stop $CONTAINER_NAME container..."
-        docker stop $CONTAINER_NAME
+        echo "Stop $APP_NAME container..."
+        docker stop $APP_NAME
         sleep 3
         ;;
     reload)
-        echo "Reload $CONTAINER_NAME container..."
-        docker stop  $CONTAINER_NAME
+        echo "Reload $APP_NAME container..."
+        docker stop  $APP_NAME
         sleep 3
-        docker start $CONTAINER_NAME
+        docker start $APP_NAME
         sleep 3
         ;;
     *)
