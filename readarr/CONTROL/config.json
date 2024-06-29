@@ -31,6 +31,10 @@
       {
         "name": "Docker",
         "description": "Data and files directory for Docker Apps"
+      },
+      {
+        "name": "Download",
+        "description": "Download default shared folder"
       }
     ],
     "boot-priority": {
