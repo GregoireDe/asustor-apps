@@ -1,0 +1,32 @@
+{
+  "general": {
+    "package": "memcached-docker",
+    "name": "Memcached",
+    "version": "1.6.28",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "Memcached",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://github.com/docker-library/memcached",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      11211
+    ]
+  }
+}
