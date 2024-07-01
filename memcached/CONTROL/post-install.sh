@@ -19,7 +19,7 @@ ADMIN_GID=$(id -g admin)
 
 docker create -i -t --name=$APP_NAME \
         -p 11211:11211  \
-        -m 64 \
+        -m 64m \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
         --restart unless-stopped \
          $APP_IMAGE:$APP_IMAGE_BRANCH
