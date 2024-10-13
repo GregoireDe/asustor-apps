@@ -18,10 +18,8 @@ C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
 docker create -i -t --name=$APP_NAME \
-        -p 13025:3001  \
+        -p 13025:3000  \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
-        -v /etc/localtime:/etc/localtime:ro \
-        -v /share/Docker/$APP_NAME/data:/data:rw \
         -v /share/Docker/$APP_NAME/config:/config:rw \
         --restart unless-stopped \
          $APP_IMAGE:$APP_IMAGE_BRANCH
