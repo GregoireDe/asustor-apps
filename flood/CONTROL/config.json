@@ -14,6 +14,18 @@
     "architecture": "x86-64",
     "firmware": "4.0.0"
   },
+  "adm-desktop": {
+    "app": {
+      "port": 13025,
+      "protocol": "http",
+      "type": "custom",
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+  },
   "register": {
     "share-folder": [
       {

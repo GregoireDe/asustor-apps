@@ -2,7 +2,7 @@
   "general": {
     "package": "prowlarr-docker",
     "name": "Prowlarr",
-    "version": "1.19.0.4568",
+    "version": "1.24.3.4754",
     "depends": [
       "docker-ce(>=20.10.2.r2)"
     ],

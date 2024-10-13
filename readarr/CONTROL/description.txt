@@ -3,5 +3,5 @@ Readarr is a ebook collection manager for Usenet and BitTorrent users. It can mo
 Note:
 1. The "/downloads" folder of Readarr binds to "/share/Download" shared folder in NAS, please find files in that folder.
 2. From description of this container, you should also bind or set the download path of download client for Readarr to "/
-3. The folder "/shared" of Readarr binds to shared folder root of NAS, you can import videos in Readarr from other shared
+3. The folder "/shared" of Readarr binds to shared folder root of NAS, you can import books in Readarr from other shared
 4. The docker version is maintained by LinuxServer.io.
