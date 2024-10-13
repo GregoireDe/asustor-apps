@@ -1,0 +1,32 @@
+{
+  "general": {
+    "package": "flood-docker",
+    "name": "Flood",
+    "version": "4.8.4",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "Jesse Chan",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://flood.js.org",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      13025
+    ]
+  }
+}

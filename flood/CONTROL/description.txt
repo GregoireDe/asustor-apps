@@ -1,0 +1,5 @@
+Flood is a monitoring service for various torrent clients. It's a Node.js service that communicates with your favorite torrent client and serves a decent web UI for administration
+
+Note:
+1. Flood port: 13025
+2. The docker version is maintained by jesec

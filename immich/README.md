@@ -1,8 +1,8 @@
-# Memcached Docker App
+# immich Docker App
 
-![Memcached](CONTROL/icon.png)
+![immich](CONTROL/icon.png)
 
 ## Links
-* Docker Memcached [@Memcached](https://hub.docker.com/_/memcached)
+* Docker immich [@immich](https://github.com/immich-app/immich/releases/)
 * ASUSTOR [App Central](http://www.asustor.com/apps?lan=en)
 * ASUSTOR [Developer Corner](http://developer.asustor.com/)

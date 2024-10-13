@@ -1,0 +1,44 @@
+{
+  "general": {
+    "package": "immich-docker",
+    "name": "Immich",
+    "version": "1.109.2",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "Immich",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://immich.app/",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+    "adm-desktop": {
+    "app": {
+      "port": 2283,
+      "protocol": "http",
+      "type": "custom",
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      2283
+    ]
+  }
+}

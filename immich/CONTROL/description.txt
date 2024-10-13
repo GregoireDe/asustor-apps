@@ -1,0 +1,6 @@
+High performance self-hosted photo and video management solution.
+
+Note:
+1. Default port: 2283
+2. Current version does not integrate iGPU hardware acceleration for machine learning and transcoding (bugged)
+3. The docker version is maintained by Immich
