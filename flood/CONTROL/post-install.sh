@@ -19,8 +19,8 @@ ADMIN_GID=$(id -g admin)
 
 docker create -i -t --name=$APP_NAME \
         -p 13025:3000  \
-        -e PUID=$C_UID -e PGID=$ADMIN_GID \
         -e HOME=/config \
+        -u $C_UID:$ADMIN_GID \
         -v /share/Docker/$APP_NAME/data:/data:rw \
         -v /share/Docker/$APP_NAME/config:/config:rw \
         --restart unless-stopped \
