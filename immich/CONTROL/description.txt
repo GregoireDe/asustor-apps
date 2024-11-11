@@ -1,6 +1,7 @@
 High performance self-hosted photo and video management solution.
+Easily back up, organize, and manage your photos on your own server. Immich helps you browse, search and organize your photos and videos with ease, without sacrificing your privacy.
 
 Note:
 1. Default port: 2283
-2. Current version does not integrate iGPU hardware acceleration for machine learning and transcoding (bugged)
+2. Current version does not integrate iGPU hardware acceleration for machine learning and transcoding (bugged at that time)
 3. The docker version is maintained by Immich
