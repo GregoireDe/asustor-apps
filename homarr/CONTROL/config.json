@@ -1,0 +1,44 @@
+{
+  "general": {
+    "package": "homarr-docker",
+    "name": "Homarr",
+    "version": "1.24.3.4754",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "Thomas Camlong",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://homarr.dev",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "adm-desktop": {
+    "app": {
+      "port": 27575,
+      "protocol": "http",
+      "type": "custom",
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      27575
+    ]
+  }
+}
