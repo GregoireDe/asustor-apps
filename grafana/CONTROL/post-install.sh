@@ -21,7 +21,7 @@ docker create -i -t --name=$APP_NAME \
         -p 43000:3000  \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
         -v /etc/localtime:/etc/localtime:ro \
-        -v /share/Docker/$APP_NAME/data:/var/lib/grafana \
+        -v /share/Docker/$APP_NAME:/var/lib/grafana \
         --restart unless-stopped \
          $APP_IMAGE:$APP_IMAGE_BRANCH
 
