@@ -2,7 +2,7 @@
 
 echo "start-stop"
 
-. "/usr/local/AppCentral/homarr-docker/CONTROL/conf.sh"
+. "/usr/local/AppCentral/grafana-docker/CONTROL/conf.sh"
 
 case "$1" in
     start)
