@@ -14,8 +14,8 @@ if [ ! -z $CONTAINER_TEST ]; then
         docker rm -f $CONTAINER_TEST
 fi
 
-C_UID=$(id -u admin)
-ADMIN_GID=$(id -g admin)
+C_UID=472
+ADMIN_GID=$(id -g root)
 
 docker create -i -t --name=$APP_NAME \
         -p 43000:3000  \
