@@ -23,7 +23,7 @@ docker create -i -t --name=$APP_NAME \
         -v /etc/localtime:/etc/localtime:ro \
         -v /share/Docker/$APP_NAME/data:/var/lib/grafana \
         -v /share/Docker/$APP_NAME/log:/var/log/grafana \
-        -v /share/Docker/$APP_NAME/config/grafana.ini:/etc/grafana/grafana.ini \
+        -v /share/Docker/$APP_NAME/config:/etc/grafana \
         --restart unless-stopped \
          $APP_IMAGE:$APP_IMAGE_BRANCH
 
