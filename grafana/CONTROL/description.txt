@@ -4,3 +4,4 @@ Query, visualize, alert on, and understand your data no matter where it’s stor
 
 Note:
 1. The docker version is maintained by Grafana.
+2. Grafana's default login credentials are username: "admin" and password: "admin"
