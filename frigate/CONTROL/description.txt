@@ -4,3 +4,4 @@ All processing is performed locally on your own hardware, and your camera feeds 
 Note:
 1. The docker version is maintained by the developer.
 2. Default port:  18970 (HTTP unauthenticated) /  18971 (HTTPS authenticated). Be carefull if you expose on Internet
+3. Admin password on authenticated port is shared inside logs, use SSH and root access to get it with : "docker logs Frigate"
