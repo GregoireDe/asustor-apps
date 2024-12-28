@@ -3,4 +3,4 @@ All processing is performed locally on your own hardware, and your camera feeds 
 
 Note:
 1. The docker version is maintained by the developer.
-2. Default port: 18971
+2. Default port:  18970 (HTTP unauthenticated) /  18971 (HTTPS authenticated). Be carefull if you expose on Internet
