@@ -16,7 +16,8 @@ fi
 
 C_UID=472
 ADMIN_GID=$(id -g root)
-
+chown -R 472:root /share/Docker/$APP_NAME
+cat '' > /share/Docker/$APP_NAME/config/grafana.ini
 docker create -i -t --name=$APP_NAME \
         -p 43000:3000  \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \

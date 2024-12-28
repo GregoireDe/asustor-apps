@@ -1,0 +1,12 @@
+services:
+  grafana:
+    image: grafana/grafana
+    container_name: Grafana
+    restart: always
+    ports:
+      - 43000:3000
+    volumes:
+      - /share/Docker/Grafana/data:/var/lib/grafana
+      - /share/Docker/Grafana/log:/var/log/grafana
+      - /share/Docker/Grafana/config/grafana.ini:/etc/grafana/grafana.ini
+    user: "472"

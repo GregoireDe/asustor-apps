@@ -1,0 +1,44 @@
+{
+  "general": {
+    "package": "frigate-docker",
+    "name": "Frigate",
+    "version": "0.14.1",
+    "depends": [
+      "docker-ce(>=20.10.2.r2)"
+    ],
+    "conflicts": [],
+    "developer": "Blake Blackshear",
+    "maintainer": "h2h3",
+    "email": "asustor@havi.fr",
+    "website": "https://frigate.video",
+    "architecture": "x86-64",
+    "firmware": "4.0.0"
+  },
+  "adm-desktop": {
+    "app": {
+      "port": 18971,
+      "protocol": "http",
+      "type": "custom",
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+  },
+  "register": {
+    "share-folder": [
+      {
+        "name": "Docker",
+        "description": "Data and files directory for Docker Apps"
+      }
+    ],
+    "boot-priority": {
+      "start-order": 80,
+      "stop-order": 20
+    },
+    "port": [
+      18971
+    ]
+  }
+}
