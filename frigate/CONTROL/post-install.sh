@@ -19,7 +19,7 @@ ADMIN_GID=$(id -g admin)
 
 docker create -i -t --name=$APP_NAME \
         -p 18971:8971 \
-        -p 18970:5000
+        -p 18970:5000 \
         -p 18554:8554 \
         -p 18555:8555/tcp \
         -p 18555:8555/udp \
