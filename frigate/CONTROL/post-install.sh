@@ -28,6 +28,7 @@ docker create -i -t --name=$APP_NAME \
         --device /dev/bus/usb:/dev/bus/usb \
         --device /dev/dri/renderD128 \
         --shm-size=128m \
+        --privileged \
         -v /etc/localtime:/etc/localtime:ro \
         -v /var/run/docker.sock:/var/run/docker.sock:rw \
         -v /share/Docker/$APP_NAME/configs:/config:rw \
