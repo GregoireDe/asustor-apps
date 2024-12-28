@@ -32,8 +32,7 @@ docker create -i -t --name=$APP_NAME \
         -v /etc/localtime:/etc/localtime:ro \
         -v /var/run/docker.sock:/var/run/docker.sock:rw \
         -v /share/Docker/$APP_NAME/configs:/config:rw \
-        -v /share/Docker/$APP_NAME/data:/media/frigat:rw \
-        -e FRIGATE_RTSP_PASSWORD='_Adm!n2024' \
+        -v /share/Docker/$APP_NAME/data:/media/frigate:rw \
         -v /share/Docker/$APP_NAME/icons:/app/public/icons:rw \
         --restart unless-stopped \
          $APP_IMAGE:$APP_IMAGE_BRANCH
