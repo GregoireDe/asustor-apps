@@ -2,7 +2,7 @@
   "general": {
     "package": "flood-docker",
     "name": "Flood",
-    "version": "4.8.4",
+    "version": "4.8.5",
     "depends": [
       "docker-ce(>=20.10.2.r2)"
     ],
