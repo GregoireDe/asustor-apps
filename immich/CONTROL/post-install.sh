@@ -4,15 +4,10 @@ echo "post-install"
 
 . "/usr/local/AppCentral/immich-docker/CONTROL/conf.sh"
 
-FILE_DOCKER_COMPOSE="docker-compose.yml"
-FILE_TRANSCODING="hwaccel.transcoding.yml"
-FILE_ML="hwaccel.ml.yml"
-
 if [ ! -f $FILE_DOCKER_COMPOSE ]; then
   wget -O $FILE_DOCKER_COMPOSE $IMMICH_REPO/download/$FILE_DOCKER_COMPOSE.default
   cp $FILE_DOCKER_COMPOSE.default $FILE_DOCKER_COMPOSE
 fi
-
 
 if [ ! -f $FILE_TRANSCODING ]; then
   wget -O $FILE_TRANSCODING $IMMICH_REPO/download/$FILE_TRANSCODING.default
