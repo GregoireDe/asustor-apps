@@ -2,7 +2,7 @@
   "general": {
     "package": "readarr-docker",
     "name": "Readarr",
-    "version": "0.4.6.2711",
+    "version": "0.4.6",
     "depends": [
       "docker-ce(>=20.10.2.r2)"
     ],
