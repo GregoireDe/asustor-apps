@@ -25,10 +25,11 @@ if [ ! -f $FILE_ML ]; then
 fi
 
 mkdir -p  /share/Docker/$APP_NAME/config
-ln -s  $FILE_DOCKER_COMPOSE /share/Docker/$APP_NAME/$FILE_DOCKER_COMPOSE
-ln -s  $FILE_TRANSCODING /share/Docker/$APP_NAME/$FILE_TRANSCODING
-ln -s  $FILE_ML /share/Docker/$APP_NAME/$FILE_ML
+ln -s  $FILE_DOCKER_COMPOSE /share/Docker/$APP_NAME/config/$FILE_DOCKER_COMPOSE
+ln -s  $FILE_TRANSCODING /share/Docker/$APP_NAME/config/$FILE_TRANSCODING
+ln -s  $FILE_ML /share/Docker/$APP_NAME/config/$FILE_ML
 
+docker compose pull
 docker compose up -d
 
 echo "Completed docker compose"
