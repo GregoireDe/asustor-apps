@@ -11,13 +11,16 @@ echo "Completed docker pull"
 CONTAINER_TEST=$(docker container ls -a | grep $APP_NAME | awk '{print $1}')
 
 if [ ! -z $CONTAINER_TEST ]; then
-        docker rm -f $CONTAINER_TEST
+  docker rm -f $CONTAINER_TEST
 fi
+
+echo "Create arr_default network"
+docker network inspect arr_default  >/dev/null || docker network create arr_default
 
 C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
-docker create -i -t --name=$APP_NAME \
+docker create -i -t --name=$APP_NAME --network=arr_default \
         -p 29696:9696 \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
         -v /etc/localtime:/etc/localtime:ro \
@@ -25,6 +28,9 @@ docker create -i -t --name=$APP_NAME \
         --restart unless-stopped \
          $APP_IMAGE:$APP_IMAGE_BRANCH
 
+
 docker start $APP_NAME
+
+. "/usr/local/AppCentral/prowlarr-docker/CONTROL/network.sh"
 
 exit 0
