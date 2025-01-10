@@ -14,7 +14,7 @@ if [ ! -z $CONTAINER_TEST ]; then
         docker rm -f $CONTAINER_TEST
 fi
 
-echo "Create arr_default network"
+echo "Create $NETWORK network"
 docker network inspect $NETWORK  >/dev/null || docker network create $NETWORK
 
 C_UID=$(id -u admin)
