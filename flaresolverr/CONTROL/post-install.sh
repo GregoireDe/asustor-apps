@@ -14,10 +14,14 @@ if [ ! -z $CONTAINER_TEST ]; then
         docker rm -f $CONTAINER_TEST
 fi
 
+echo "Create arr_default network"
+docker network inspect arr_default  >/dev/null || docker network create arr_default
+
+
 C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
-docker create -i -t --name=$APP_NAME \
+docker create -i -t --name=$APP_NAME --network=arr_default \
         -p 18191:8191  \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
         -v /etc/localtime:/etc/localtime:ro \
