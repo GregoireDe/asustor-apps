@@ -31,4 +31,6 @@ docker create -i -t --name=$APP_NAME --network=arr_default \
 
 docker start $APP_NAME
 
+. "/usr/local/AppCentral/flaresolverr-docker/CONTROL/network.sh"
+
 exit 0
