@@ -17,7 +17,6 @@ fi
 echo "Create arr_default network"
 docker network inspect $NETWORK  >/dev/null || docker network create $NETWORK
 
-
 C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
@@ -30,7 +29,5 @@ docker create -i -t --name=$APP_NAME --network=$NETWORK \
          $APP_IMAGE:$APP_IMAGE_BRANCH
 
 docker start $APP_NAME
-
-. "/usr/local/AppCentral/flaresolverr-docker/CONTROL/network.sh"
 
 exit 0

@@ -31,6 +31,4 @@ docker create -i -t --name=$APP_NAME --network=$NETWORK \
 
 docker start $APP_NAME
 
-. "/usr/local/AppCentral/prowlarr-docker/CONTROL/network.sh"
-
 exit 0
