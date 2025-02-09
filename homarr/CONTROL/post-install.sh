@@ -11,10 +11,10 @@ echo "Completed docker pull"
 CONTAINER_TEST=$(docker container ls -a | grep $APP_NAME | awk '{print $1}')
 
 if [ ! -z $CONTAINER_TEST ]; then
-        docker rm -f $CONTAINER_TEST
+    docker rm -f $CONTAINER_TEST
 fi
 
-echo "Create arr_default network"
+echo "Create $NETWORK network"
 docker network inspect $NETWORK  >/dev/null || docker network create $NETWORK
 
 C_UID=$(id -u admin)
