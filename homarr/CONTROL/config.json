@@ -2,9 +2,9 @@
   "general": {
     "package": "homarr-docker",
     "name": "Homarr",
-    "version": "0.15.10",
+    "version": "1.51.0",
     "depends": [
-      "docker-ce(>=20.10.2.r2)"
+      "docker-ce(>=25.0.3)"
     ],
     "conflicts": [],
     "developer": "Thomas Camlong",
@@ -17,6 +17,7 @@
   "adm-desktop": {
     "app": {
       "port": 27575,
+      "reverseproxy_port": 27585,
       "protocol": "http",
       "type": "custom",
       "url": "/"

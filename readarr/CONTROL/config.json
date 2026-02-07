@@ -4,7 +4,7 @@
     "name": "Readarr",
     "version": "0.4.10.2734",
     "depends": [
-      "docker-ce(>=20.10.2.r2)"
+      "docker-ce(>=25.0.3)"
     ],
     "conflicts": [],
     "developer": "Readarr",
@@ -12,11 +12,12 @@
     "email": "asustor@havi.fr",
     "website": "https://readarr.com",
     "architecture": "x86-64",
-    "firmware": "4.0.0"
+    "firmware": "4.3.0"
   },
   "adm-desktop": {
     "app": {
       "port": 28787,
+      "reverseproxy_port": 28797,
       "protocol": "http",
       "type": "custom",
       "url": "/"
