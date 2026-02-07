@@ -3,4 +3,5 @@ Simplify the management of your server with Homarr - a sleek, modern dashboard t
 Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.
 
 Note:
-1. The docker version is maintained by the developer.
+1. Version 1.X introduce a major breaking change, please follow official documentation and save your previous configuration (0.15) before installation: https://homarr.dev/blog/2024/09/23/version-1.0/
+2. The docker version is maintained by the developer.
