@@ -1,0 +1,5 @@
+Version: 2.3.0.5236
+1. Upgrade minimum requirements to ADM 5.X
+2. Update to Docker version 2.3.0.5236
+
+

@@ -2,6 +2,6 @@ Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs base s
 Prowlarr supports both Torrent Trackers and Usenet Indexers.
 It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).
 
-
 Note:
-1. The docker version is maintained by LinuxServer.io.
+1. Port: 29696  / reverse proxy port: 29606
+2. The docker version is maintained by LinuxServer.io.

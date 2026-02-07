@@ -12,7 +12,7 @@
     "email": "asustor@havi.fr",
     "website": "https://prowlarr.com",
     "architecture": "x86-64",
-    "firmware": "4.3.0"
+    "firmware": "5.0.0"
   },
   "adm-desktop": {
     "app": {
