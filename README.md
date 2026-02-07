@@ -7,7 +7,7 @@ Apps for Asustor OS (ADM 5.X)
 - Prowlarr
 - Extended Settings
 
-<pkg_directory> [<destination_directory>]`
+Building: `python3 apkg-tools_py3.py create <pkg_directory> [<destination_directory>]`
 
 The folder contains APK apps if you want to install manually.
 
