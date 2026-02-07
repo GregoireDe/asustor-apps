@@ -2,7 +2,7 @@
   "general": {
     "package": "homarr-docker",
     "name": "Homarr",
-    "version": "1.51.0",
+    "version": "1.53.0",
     "depends": [
       "docker-ce(>=25.0.3)"
     ],

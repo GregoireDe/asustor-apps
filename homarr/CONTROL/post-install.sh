@@ -17,17 +17,16 @@ fi
 echo "Create $NETWORK network"
 docker network inspect $NETWORK  >/dev/null || docker network create $NETWORK
 
+SECRET_KEY=$(openssl rand -hex 32)
 C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
 docker create -i -t --name=$APP_NAME --network=$NETWORK \
         -p 27575:7575 \
-        -e PUID=$C_UID -e PGID=$ADMIN_GID -e DISABLE_ANALYTICS=true \
+        -e PUID=$C_UID -e PGID=$ADMIN_GID -e  SECRET_ENCRYPTION_KEY=$SECRET_KEY  DISABLE_ANALYTICS=true \
         -v /etc/localtime:/etc/localtime:ro \
         -v /var/run/docker.sock:/var/run/docker.sock:rw \
-        -v /share/Docker/$APP_NAME/configs:/app/data/configs:rw \
-        -v /share/Docker/$APP_NAME/data:/data:rw \
-        -v /share/Docker/$APP_NAME/icons:/app/public/icons:rw \
+        -v /share/Docker/$APP_NAME/data:/appdata:rw \
         --restart unless-stopped \
          $APP_IMAGE:$APP_IMAGE_BRANCH
 
