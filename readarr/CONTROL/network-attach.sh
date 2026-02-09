@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo "Create $NETWORK network"
 docker network inspect $NETWORK  >/dev/null || docker network create $NETWORK
 
