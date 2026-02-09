@@ -2,7 +2,7 @@
 
 echo "pre-install"
 
-. "./conf.sh"
+. "$APKG_PKG_DIR/conf.sh"
 
 ARR_LIST="Jackett|Lidarr|Bazarr|Radarr|Overseer|Prowlarr|Sonarr|Readarr"
 ALL_ARR_LIST=$(docker container ps --format "table {{.Names}}" | grep -E $ARR_LIST | paste -sd' ')
