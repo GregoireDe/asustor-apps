@@ -4,6 +4,8 @@ echo "post-install"
 
 . "$APKG_PKG_DIR/CONTROL/conf.sh"
 
+. "$APKG_PKG_DIR/CONTROL/network-install.sh"
+
 docker pull $APP_IMAGE:$APP_IMAGE_BRANCH
 
 echo "Completed docker pull"
@@ -29,7 +31,5 @@ docker create -i -t --name=$APP_NAME --network=$NETWORK \
         $APP_IMAGE:$APP_IMAGE_BRANCH
 
 docker start $APP_NAME
-
-. "$APKG_PKG_DIR/CONTROL/network-install.sh"
 
 exit 0

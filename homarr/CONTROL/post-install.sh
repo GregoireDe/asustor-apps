@@ -2,7 +2,9 @@
 
 echo "post-install"
 
-. "/usr/local/AppCentral/homarr-docker/CONTROL/conf.sh"
+. "$APKG_PKG_DIR/CONTROL/conf.sh"
+
+. "$APKG_PKG_DIR/CONTROL/network-install.sh"
 
 docker pull $APP_IMAGE:$APP_IMAGE_BRANCH
 
@@ -13,9 +15,6 @@ CONTAINER_TEST=$(docker container ls -a | grep $APP_NAME | awk '{print $1}')
 if [ ! -z $CONTAINER_TEST ]; then
     docker rm -f $CONTAINER_TEST
 fi
-
-echo "Create $NETWORK network"
-docker network inspect $NETWORK  >/dev/null || docker network create $NETWORK
 
 SECRET_KEY=$(openssl rand -hex 32)
 C_UID=$(id -u admin)
