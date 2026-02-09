@@ -2,8 +2,7 @@
 
 echo "pre-install"
 
-CURRENT_PATH=$(dirname "$0")
-. "$CURRENT_PATH/conf.sh"
+. "$APKG_TEMP_DIR/CONTROL/conf.sh"
 
 ARR_LIST="Jackett|Lidarr|Bazarr|Radarr|Overseer|Prowlarr|Sonarr|Readarr"
 ALL_ARR_LIST=$(docker container ps --format "table {{.Names}}" | grep -E $ARR_LIST | paste -sd' ')
