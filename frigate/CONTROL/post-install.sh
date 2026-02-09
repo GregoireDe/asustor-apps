@@ -2,7 +2,7 @@
 
 echo "post-install"
 
-. "/usr/local/AppCentral/frigate-docker/CONTROL/conf.sh"
+. "$APKG_PKG_DIR/CONTROL/conf.sh"
 
 docker pull $APP_IMAGE:$APP_IMAGE_BRANCH
 
