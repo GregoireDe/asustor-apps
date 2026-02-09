@@ -2,7 +2,7 @@
 
 echo "pre-install"
 
-. "$APKG_TEMP_DIR/conf.sh"
+. "/usr/local/AppCentral/readarr-docker/CONTROL/conf.sh"
 
 ARR_LIST="Jackett|Lidarr|Bazarr|Radarr|Overseer|Prowlarr|Sonarr|Readarr"
 ALL_ARR_LIST=$(docker container ps --format "table {{.Names}}" | grep -E $ARR_LIST | paste -sd' ')
