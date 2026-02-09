@@ -2,7 +2,7 @@
 
 echo "pre-install"
 
-. "/usr/local/AppCentral/prowlarr-docker/CONTROL/conf.sh"
+. "./conf.sh"
 
 ARR_LIST="Jackett|Lidarr|Bazarr|Radarr|Overseer|Prowlarr|Sonarr|Readarr"
 ALL_ARR_LIST=$(docker container ps --format "table {{.Names}}" | grep -E $ARR_LIST | paste -sd' ')
