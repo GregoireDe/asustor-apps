@@ -3,7 +3,7 @@
 echo "Create $NETWORK network"
 docker network inspect $NETWORK  >/dev/null || docker network create $NETWORK
 
-ARR_LIST="Jackett|Lidarr|Bazarr|Radarr|Overseer|Prowlarr|Sonarr|Readarr|FlareSolverr"
+ARR_LIST="Jackett|Lidarr|Bazarr|Radarr|Overseer|Prowlarr|Sonarr|Readarr|FlareSolverr|Homarr"
 ALL_ARR_LIST=$(docker container ps --format "table {{.Names}}" | grep -E $ARR_LIST | paste -sd' ')
 
 for i in $ALL_ARR_LIST; do
