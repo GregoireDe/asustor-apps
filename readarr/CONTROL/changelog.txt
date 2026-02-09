@@ -1,6 +1,6 @@
 Version: 0.4.18.2805
 1. /!\ Announcement: Retirement of Readarr (https://github.com/Readarr/Readarr) Jun 27, 2025
-2. Upgrade minimum requirements to ADM 5.X
+2. Upgrade minimum requirements to ADM 4.3
 3. Update to Docker version 0.4.18.2805
 
 
