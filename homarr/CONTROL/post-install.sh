@@ -16,7 +16,15 @@ if [ ! -z $CONTAINER_TEST ]; then
     docker rm -f $CONTAINER_TEST
 fi
 
-SECRET_KEY=$(openssl rand -hex 32)
+SECRET_KEY=
+if [ -e /share/Docker/$APP_NAME/secret.key ]; then
+        SECRET_KEY=$(cat /share/Docker/$APP_NAME/secret.key | awk '{print $1}')
+
+else
+        SECRET_KEY=$(openssl rand -hex 32)
+        echo "$SECRET_KEY" >> /share/Docker/$APP_NAME/secret.key
+fi
+
 C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
