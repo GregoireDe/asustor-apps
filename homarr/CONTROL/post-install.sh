@@ -30,7 +30,7 @@ ADMIN_GID=$(id -g admin)
 
 docker create -i -t --name=$APP_NAME --network=$NETWORK \
         -p 27575:7575 \
-        -e PUID=$C_UID -e PGID=$ADMIN_GID -e  SECRET_ENCRYPTION_KEY=$SECRET_KEY  DISABLE_ANALYTICS=true \
+        -e PUID=$C_UID -e PGID=$ADMIN_GID -e  SECRET_ENCRYPTION_KEY=$SECRET_KEY -e  DISABLE_ANALYTICS=true \
         -v /etc/localtime:/etc/localtime:ro \
         -v /var/run/docker.sock:/var/run/docker.sock:rw \
         -v /share/Docker/$APP_NAME/data:/appdata:rw \
