@@ -2,7 +2,7 @@
 
 echo "start-stop"
 
-. "/usr/local/AppCentral/readarr-docker/CONTROL/conf.sh"
+. "$APKG_PKG_DIR/CONTROL/conf.sh"
 
 case "$1" in
     start)

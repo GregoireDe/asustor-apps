@@ -5,6 +5,8 @@ Apps for Asustor OS (ADM 5.X)
 
 - FlareSolverr
 - Prowlarr
+- Homarr
+- Flood
 - Extended Settings
 
 Building: `python3 apkg-tools_py3.py create <pkg_directory> [<destination_directory>]`

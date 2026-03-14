@@ -2,7 +2,7 @@
 
 echo "pre-uninstall"
 
-. "/usr/local/AppCentral/prowlarr-docker/CONTROL/conf.sh"
+. "$APKG_PKG_DIR/CONTROL/conf.sh"
 
 container=$(docker container ls -a | grep $APP_NAME  | awk '{print $1}')
 im=$(docker images | grep $APP_IMAGE | grep latest | awk '{print $3}')

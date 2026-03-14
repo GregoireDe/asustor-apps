@@ -28,4 +28,12 @@ docker create -i -t --name=$APP_NAME \
 
 docker start $APP_NAME
 
+#Always check if there is any images tag with none, and remove it.
+oldim=$(docker images | grep  $APP_IMAGE | grep none | awk '{print $3}')
+echo $oldim
+
+if [ ! -z $oldim ]; then
+        docker rmi -f $oldim
+fi
+
 exit 0
