@@ -18,7 +18,7 @@ fi
 C_UID=$(id -u admin)
 ADMIN_GID=$(id -g admin)
 
-docker create -i -t --name=$APP_NAME --network=$NETWORK \
+docker create -i -t --name=$APP_NAME  \
         -p 21883:1883 \
         -e PUID=$C_UID -e PGID=$ADMIN_GID \
         -v /etc/localtime:/etc/localtime:ro \
